@@ -97,7 +97,7 @@ pw_tree() {
     command -v tree >/dev/null 2>&1 ||
         die "'tree' command not found"
 
-    tree --noreport | sed 's/\.gpg$//'
+    /usr/bin/tree -C --noreport | sed 's/\.gpg$//'
 }
 
 yn() {
