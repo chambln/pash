@@ -226,6 +226,7 @@ main() {
         s*) pw_show "$2" ;;
         l*) pw_list ;;
         t*) pw_tree ;;
+        git) "$@" ;;
         *)  usage
     esac
 }
